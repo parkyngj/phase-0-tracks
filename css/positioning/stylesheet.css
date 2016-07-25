@@ -4,14 +4,14 @@
     margin: 0 auto;
     left: 0;
     right: 0;
+    top: 30px;
 }
-
 #glasses{
-  position: absolute;
+    position: absolute;
 }
 
 #octopus{
   display: block;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 100px;
 }
