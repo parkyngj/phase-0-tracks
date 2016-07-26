@@ -1,23 +1,17 @@
 #hat{
+    position: relative;
     display: block;
-    position: absolute;
-    margin: 0 auto;
-    left: 28px;
-    right: 0;
-    top: 30px;
+    margin: auto;
 }
 
 #glasses{
+    position: relative;
     display: block;
-    position: absolute;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    top: 200px;
+    margin: auto;
+    margin-bottom: -160px;
 }
 
 #octopus{
-  display: block;
-  margin: 0 auto;
-  margin-top: 100px;
+    display: block;
+    margin: auto;
 }

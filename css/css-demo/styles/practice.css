@@ -12,3 +12,7 @@
 .accomp{
   font-size: .8em;  
 }
+
+h3:first-letter,li:first-letter{
+  font-size: 1.2em;
+}
