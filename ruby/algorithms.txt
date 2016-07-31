@@ -1,0 +1,8 @@
+Algorithm for Elevator Robot
+
+- Wait until it is 10AM.
+- Call the elevator by pushing the up button.
+- View the buttons, starting from the bottom
+	- If the button you are viewing isn't 42, go to the next button
+	- If the button you are viewing is 42, and it isn't pushed push it
+	- Otherwise, since 42 is already pushed, just wait
