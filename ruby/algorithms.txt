@@ -6,3 +6,13 @@ Algorithm for Elevator Robot
 	- If the button you are viewing isn't 42, go to the next button
 	- If the button you are viewing is 42, and it isn't pushed push it
 	- Otherwise, since 42 is already pushed, just wait
+
+Algorithm for getting dressed
+
+- Put on t-shirt
+- If blue jeans are dirty, put on black jeans.
+	Otherwise, put on blue jeans.
+- If it is raining, put on rain boots.
+	Otherwise, put on sneakers.
+- If the temperature is under 60 degrees, then put on jacket.
+	Otherwise, do nothing.
