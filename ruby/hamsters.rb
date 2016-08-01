@@ -28,3 +28,17 @@ if age == ""
   age = nil
 else age = age.to_f
 end
+
+puts "Hamster Name: #{name}"
+puts "Volume: #{volume}"
+puts "Fur Color: #{fur_color}"
+
+if eligible
+  puts "#{name} is a good candidate for adoption."
+else puts "#{name} HAS BEEN TRIED, AND FOUND WANTING."
+end
+
+if age == nil
+  puts "#{name}'s age is a mystery for the ages."
+else puts "#{name} is #{age} yrs old."
+end
