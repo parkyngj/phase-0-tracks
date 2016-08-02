@@ -1,7 +1,7 @@
 puts "What is your hamster's name?"
 name = gets.chomp
 
-puts "How loud is your hamster? (Pick from 1 to 10)"
+puts "How loud is your hamster? (Pick from 1 to 10, 10 being the loudest)"
 volume = gets.chomp.to_f
 
 puts "What color fur does your hamster have?"
