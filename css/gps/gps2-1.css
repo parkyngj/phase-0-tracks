@@ -1,0 +1,50 @@
+body{
+  font-family: 'Verdana', sans-serif;
+  background-image: url("https://octodex.github.com/images/Robotocat.png");
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  background-position: 0px -50px;
+  margin: 0 auto;
+  width: 700px;
+}
+
+a{
+  color: rgb(255,0,0);
+}
+a:hover{
+  color: rgb(0,255,0);
+}
+a:visited{
+  color: rgb(180,0,0);
+}
+
+/* Header Styling */
+header{
+  width: 600px;
+}
+
+/* Columns Styling */
+.column-1{
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+}
+
+.column-2{
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+}
+
+.column-1 h2, .column-2 h2 {
+  font-size: 1em;
+  color: rgba(255,0,0,.6);
+}
+
+/* Footer Styling */
+footer{
+  width: 600px;
+  margin-top: 20px;
+  font-size: .8em;
+}
+
