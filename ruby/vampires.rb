@@ -1,5 +1,3 @@
-employee_num = nil
-
 puts "How many employees will be processed?"
 employee_num = gets.chomp.to_i
 
@@ -40,7 +38,7 @@ until current_employee == employee_num
     else puts "Please enter a valid y/n string."
     end
   end
-
+ 
   wants_garlic = to_bool(garlic_pref)
 
   wants_hi = to_bool(hi_pref)
@@ -49,11 +47,11 @@ until current_employee == employee_num
     is_vampire = "Probably not a vampire."
   end
 
-  if !correct_age && !(wants_garlic && wants_hi)
+  if !correct_age && ((!wants_garlic && wants_hi) || (wants_garlic && !wants_hi))
     is_vampire = "Probably a vampire."
   end
 
-  if !correct_age && !(wants_garlic || wants_hi)
+  if !correct_age && !wants_garlic && !wants_hi
     is_vampire = "Almost certainly a vampire."
   end
   
@@ -61,12 +59,12 @@ until current_employee == employee_num
   allergy = gets.chomp
   
   while allergy != "done"
-    if allergy == "sunshine"
-      is_vampire = "Probably a vampire."
+    if allergy != "sunshine"
       puts "Any other allergies?"
       allergy = gets.chomp
-    else puts "Any other allergies?"
-      allergy = gets.chomp
+    else
+      allergy = "done"
+      is_vampire = "Probably a vampire."
     end
   end
 
@@ -79,3 +77,5 @@ until current_employee == employee_num
   current_employee = current_employee + 1
   
 end
+
+puts "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
