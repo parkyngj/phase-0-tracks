@@ -97,3 +97,18 @@ return new_alias
 
 ## close the alias_manager method definition
 end
+
+# DRIVER CODE
+
+## Ask the user to enter a name, and return the fake name generated using alias_manager method.
+puts "Welcome, agent. Please enter any number of full names (Firstname Lastname) to generate your fake names. To exit, type 'quit'."
+agent_name = gets.chomp
+
+while agent_name != "quit"
+  p alias_manager(agent_name)
+  puts "Enter another full name (Firstname Lastname) or type 'quit' to exit."
+  agent_name = gets.chomp
+end
+
+puts "This program will self-destruct in .1 seconds."
+puts "KABOOOOOOOM!"
