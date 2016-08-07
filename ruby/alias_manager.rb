@@ -29,8 +29,6 @@ def alias_manager(str)
 
 ## initialize new empty string to be the return value
 
-  
-
 ## cycle through the characters of the string
 
 ## if the character is a space, append a space to the returned string
