@@ -72,18 +72,85 @@ pokemon_crystal_elite4 = {
 
   elite2: {
 
+      name:
+        "Koga",
+
+      specialty_type:
+        "poison",
+
+      numb_of_pokemon:
+        5,
+
+      pokemon:
+        [],
+
+      reward:
+        4400
+
   }, ## indicates end of hash for elite2 key value
 
   elite3: {
+
+      name:
+        "Bruno",
+
+      specialty_type:
+        "fighting",
+
+      numb_of_pokemon:
+        5,
+
+      pokemon:
+        [
+
+        ], ## indicates end of array for pokemon key value
+
+      reward:
+        4600
+
 
   }, ## indicates end of hash for elite3 key value
 
   elite4: {
 
+      name:
+        "Karen",
+
+      specialty_type:
+        "dark",
+
+      numb_of_pokemon:
+        5,
+
+      pokemon:
+        [
+
+        ], ## indicates end of array for pokemon key value
+
+      reward:
+        4700
+
   }, ## indicates end of hash for elite4 key value
 
   champ: {
 
-  } ## indicates end of hash for champ
+      name:
+        "Lance",
+
+      specialty_type:
+        "dragon",
+
+      numb_of_pokemon:
+        6,
+
+      pokemon:
+        [
+
+        ], ## indicates end of array for pokemon key value
+
+      reward:
+        5000
+
+  } ## indicates end of hash for champ key value
 
 } ## indicates end of hash for pokemon_crystal_elite4
