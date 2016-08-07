@@ -8,62 +8,79 @@ pokemon_crystal_elite4 = {
 
 # Key values of pokemon_crystal_elite4 are to be elite1, elite2, elite3, elite4, champ (in that order)
 
-  elite1: {
-
 # Data Structure Level 1: values of keys of pokemon_crystal_elite4 will be hashes
+  
+  elite1: {
 
   # Desired keys and data type of respective values to store in each hash in Level 1
     # key0 - name
     # value0 - a string
 
+    name:
+      "Will",
+
     # key1 - specialty type
     # value1 - a string
+
+    specialty_type:
+      "psychic",
 
     # key2 - number of Pokemon
     # value2 - an integer
 
+    numb_of_pokemon:
+      5,
+
     # key3 - Pokemon
     # value3 - an array
+
+    pokemon:
+      [
+
+      # Data Structure Level 2: value of key3 (Pokemon) will be an array
+
+      # Data Structure Level 3: each array index will be a hash 
+
+        # Desired keys and values to store in each hash in Level 3
+          #key0 - name
+          #value0 - a string
+
+          #key1 - level
+          #value1 - an integer
+
+          #key2 - type(s)
+          #value2 - a string
+
+          #key3 - moveset
+          #value3 - an array
+
+            # Data Structure Level 4: value of key3 (moveset) will be an array
+              # each array index will be a string
+
+          #key4 - weak to lightning?
+          # value4 - a boolean
+
+        ], ## indicates end of array for pokemon key value
 
     # key4 - reward
     # value4 - an integer
 
-# Data Structure Level 2: value of key3 (Pokemon) will be an array
+    reward:
+      4200
 
-# Data Structure Level 3: each array index will be a hash 
-
-  # Desired keys and values to store in each hash in Level 3
-    #key0 - name
-    #value0 - a string
-
-    #key1 - level
-    #value1 - an integer
-
-    #key2 - type(s)
-    #value2 - a string
-
-    #key3 - moveset
-    #value3 - an array
-
-    #key4 - weak to lightning?
-    # value4 - a boolean
-
-# Data Structure Level 4: value of key3 (moveset) will be an array
-  # each array index will be a string
-
-  } ## indicates end of hash for elite1
+  }, ## indicates end of hash for elite1 key value
 
   elite2: {
 
-  } ## indicates end of hash for elite2
+  }, ## indicates end of hash for elite2 key value
 
   elite3: {
 
-  } ## indicates end of hash for elite3
+  }, ## indicates end of hash for elite3 key value
 
   elite4: {
 
-  } ## indicates end of hash for elite4
+  }, ## indicates end of hash for elite4 key value
 
   champ: {
 
