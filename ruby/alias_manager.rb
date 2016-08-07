@@ -4,7 +4,7 @@
 # Change all the vowels (a,e,i,o,u) to the next vowel in 'aeiou', and all of the consonants (everything else besides the vowels) to the next consonant in the alphabet.
 # So 'a' becomes 'e', 'u' becomes 'a', and 'd' becomes 'f'.
 
-# Some examples: "Sally Park" becomes "Sesl Temmz". "John Doe" becomes "Fui Kujm".
+# Some examples: "Sally Park" becomes "Sesl Temmz". "John Doe" becomes "Fui Kujp".
 
 ## DENOTES PSEUDOCODE
 
@@ -16,6 +16,7 @@ def translate_char(char)
   translated_char = ""
 
   vowels = "aeiouaAEIOUA"
+  consonants = "bcdfghjklmnpqrstvwxyzbBCDFGHJKLMNPQRSTVWXYZB"
 
 ## if the character is a vowel,
 
@@ -30,6 +31,12 @@ def translate_char(char)
 
 ## else, append the next consonant in {A-Z}\{AEIOU} or {a-z}\{aeiou} to the returned string
 
+  else
+
+    char_conso_index = consonants.index(char)
+    next_conso = consonants[char_conso_index + 1]
+
+    translated_char << next_conso
 
 ## close the if statement
 
@@ -70,14 +77,17 @@ def alias_manager(str)
 
   fn_ln_swapped.each_char do |index|
 
-## if the character is a space, append a space to the returned string
+  ## if the character is a space, append a space to the returned string
 
-  if index == " "
-    new_alias << " "
+    if index == " "
+      new_alias << " "
 
+  ## if the character is not a space, then run the character through the translate_char method
+    else
+      new_alias << translate_char(index)
 
-## close the if statement
-  end
+  ## close the if statement
+    end
 
 ## close the do loop
   end
