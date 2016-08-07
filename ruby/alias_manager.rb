@@ -107,24 +107,25 @@ puts "Welcome, agent. Please enter any number of full names (Firstname Lastname)
 puts "When you exit the program, all full names and their respective fake names will be displayed."
 agent_name = gets.chomp
 
-
-aliases = []
+aliases = [] ##initialize an empty array to store the real names and fake names of each agent
 
 while agent_name != "quit"
   agent_fake_name = alias_manager(agent_name)
-  p agent_fake_name
-  aliases.push({agent_name => agent_fake_name})
+  p agent_fake_name ## print their fake name for the real name that the user entered
+  aliases.push({agent_name => agent_fake_name}) ## store each agent's real name and fake name together as a hash in the aliases array. The agent's real name is the key (string class) and the agent's fake name is the value (also string class)
   puts "Enter another full name (Firstname Lastname) or type 'quit' to exit."
   agent_name = gets.chomp
 end
 
 ## When the user exits the program, iterate through the data structure and print all of the data the user entered.
 
-aliases.each do |agent|
-  real_name = agent.keys[0]
-  fake_name = agent.values[0]
+aliases.each do |agent| ## iterate through the array
+  real_name = agent.keys[0] ## grab the first key in the hash (Hash only has one key/value pair anyway)
+  fake_name = agent.values[0] ## grab the first value in the hash (Hash only has one key/value pair anyway)
   puts "Agent #{real_name} will be known as #{fake_name} on his/her mission."
-end
+end ## close the do loop
+
+## Says goodbye to the user.
 
 puts "This program will self-destruct in .1 seconds."
-puts "KABOOOOOOOM!"
+puts "KABOOOOOOOOOOOOM!"
