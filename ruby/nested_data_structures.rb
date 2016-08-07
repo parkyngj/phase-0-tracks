@@ -187,7 +187,114 @@ pokemon_crystal_elite4 = {
         5,
 
       pokemon:
-        [],
+        [
+
+          {
+
+            name:
+            "Ariados",
+
+           level:
+              40,
+
+           type:
+              "bug/poison",
+
+           moveset:
+             [
+
+             ], ## indicates end of array for moveset key value
+
+           weak_to_lightning:
+              false
+
+          }, ## indicates end of hash for index0 of pokemon array
+
+          {
+
+            name:
+            "Venomoth",
+
+           level:
+              41,
+
+           type:
+              "bug/poison",
+
+           moveset:
+             [
+
+             ], ## indicates end of array for moveset key value
+
+           weak_to_lightning:
+              false
+
+          }, ## indicates end of hash for index1 of pokemon array
+
+          {
+
+            name:
+            "Forretress",
+
+           level:
+              43,
+
+           type:
+              "bug/steel",
+
+           moveset:
+             [
+
+             ], ## indicates end of array for moveset key value
+
+           weak_to_lightning:
+              false
+
+          }, ## indicates end of hash for index2 of pokemon array
+
+          {
+
+            name:
+            "Muk",
+
+           level:
+              42,
+
+           type:
+              "poison",
+
+           moveset:
+             [
+
+             ], ## indicates end of array for moveset key value
+
+           weak_to_lightning:
+              false
+
+          }, ## indicates end of hash for index3 of pokemon array
+
+          {
+
+            name:
+            "Crobat",
+
+           level:
+              44,
+
+           type:
+              "poison/flying",
+
+           moveset:
+             [
+
+             ], ## indicates end of array for moveset key value
+
+           weak_to_lightning:
+              true
+
+          } ## indicates end of hash for index4 of pokemon array
+
+        ], ## indicates end of array for pokemon key value
 
       reward:
         4400
@@ -207,6 +314,111 @@ pokemon_crystal_elite4 = {
 
       pokemon:
         [
+
+          {
+
+            name:
+            "Hitmontop",
+
+           level:
+              42,
+
+           type:
+              "fighting",
+
+           moveset:
+             [
+
+             ], ## indicates end of array for moveset key value
+
+           weak_to_lightning:
+              false
+
+          }, ## indicates end of hash for index0 of pokemon array
+
+          {
+
+            name:
+            "Hitmonlee",
+
+           level:
+              42,
+
+           type:
+              "fighting",
+
+           moveset:
+             [
+
+             ], ## indicates end of array for moveset key value
+
+           weak_to_lightning:
+              false
+
+          }, ## indicates end of hash for index1 of pokemon array
+
+          {
+
+            name:
+            "Hitmonchan",
+
+           level:
+              42,
+
+           type:
+              "fighting",
+
+           moveset:
+             [
+
+             ], ## indicates end of array for moveset key value
+
+           weak_to_lightning:
+              false
+
+          }, ## indicates end of hash for index2 of pokemon array
+
+          {
+
+            name:
+            "Onix",
+
+           level:
+              43,
+
+           type:
+              "rock/ground",
+
+           moveset:
+             [
+
+             ], ## indicates end of array for moveset key value
+
+           weak_to_lightning:
+              false
+
+          }, ## indicates end of hash for index3 of pokemon array
+
+          {
+
+            name:
+            "Machamp",
+
+           level:
+              46,
+
+           type:
+              "fighting",
+
+           moveset:
+             [
+
+             ], ## indicates end of array for moveset key value
+
+           weak_to_lightning:
+              false
+
+          } ## indicates end of hash for index4 of pokemon array
 
         ], ## indicates end of array for pokemon key value
 
@@ -229,6 +441,111 @@ pokemon_crystal_elite4 = {
 
       pokemon:
         [
+
+          {
+
+            name:
+            "Umbreon",
+
+           level:
+              42,
+
+           type:
+              "dark",
+
+           moveset:
+             [
+
+             ], ## indicates end of array for moveset key value
+
+           weak_to_lightning:
+              false
+
+          }, ## indicates end of hash for index0 of pokemon array
+
+          {
+
+            name:
+            "Vileplume",
+
+           level:
+              42,
+
+           type:
+              "grass/poison",
+
+           moveset:
+             [
+
+             ], ## indicates end of array for moveset key value
+
+           weak_to_lightning:
+              true
+
+          }, ## indicates end of hash for index1 of pokemon array
+
+          {
+
+            name:
+            "Gengar",
+
+           level:
+              45,
+
+           type:
+              "ghost/poison",
+
+           moveset:
+             [
+
+             ], ## indicates end of array for moveset key value
+
+           weak_to_lightning:
+              false
+
+          }, ## indicates end of hash for index2 of pokemon array
+
+          {
+
+            name:
+            "Murkrow",
+
+           level:
+              44,
+
+           type:
+              "dark/flying",
+
+           moveset:
+             [
+
+             ], ## indicates end of array for moveset key value
+
+           weak_to_lightning:
+              true
+
+          }, ## indicates end of hash for index3 of pokemon array
+
+          {
+
+            name:
+            "Houndoom",
+
+           level:
+              47,
+
+           type:
+              "dark/fire",
+
+           moveset:
+             [
+
+             ], ## indicates end of array for moveset key value
+
+           weak_to_lightning:
+              false
+
+          } ## indicates end of hash for index4 of pokemon array
 
         ], ## indicates end of array for pokemon key value
 
