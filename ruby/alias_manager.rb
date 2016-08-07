@@ -9,7 +9,42 @@
 ## DENOTES PSEUDOCODE
 
 
-## Method takes in a string as an argument.
+## Define a helper method to change characters as instructed above. Takes in strings as an argument
+
+def translate_char(char)
+
+  translated_char = ""
+
+  vowels = "aeiouaAEIOUA"
+
+## if the character is a vowel,
+
+  if char == char[/[aeiou]/i]
+
+  ## append the next vowel in aeiou or AEIOU to the returned string
+
+    char_vowel_index = vowels.index(char)
+    next_vowel = vowels[char_vowel_index + 1]
+
+    translated_char << next_vowel
+
+## else, append the next consonant in {A-Z}\{AEIOU} or {a-z}\{aeiou} to the returned string
+
+
+## close the if statement
+
+  end
+
+## return the translated character
+
+  return translated_char
+
+## close the translate_char method definition
+end
+
+
+
+## alias_manager Method takes in a string as an argument.
 
 def alias_manager(str)
 
@@ -40,9 +75,6 @@ def alias_manager(str)
   if index == " "
     new_alias << " "
 
-## if the character is a vowel, append the next vowel in aeiou or AEIOU to the returned string
-
-## else, append the next consonant in {A-Z}\{AEIOU} or {a-z}\{aeiou} to the returned string
 
 ## close the if statement
   end
@@ -53,5 +85,5 @@ def alias_manager(str)
 ## return the result string
 return new_alias
 
-## close the method definition
+## close the alias_manager method definition
 end
