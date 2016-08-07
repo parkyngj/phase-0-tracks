@@ -9,15 +9,23 @@
 ## DENOTES PSEUDOCODE
 
 
-## Method in a string as an argument.
+## Method takes in a string as an argument.
 
-## Swap the first and last name by
+def alias_manager(str)
+
+## Swap the first and last name by:
 
 ## converting the string into an array using " " as the separator
 
+  name_array = str.split(" ")
+
 ## calling reverse on the array to reverse the order of the array elements 
 
+  name_array.reverse!
+
 ## consolidate the new array elements into one string with " " as the separator again
+
+  fn_ln_swapped = name_array.join(" ")
 
 ## initialize new empty string to be the return value
 
@@ -35,4 +43,4 @@
 
 ## return the result string
 
-## close the method definition
+end ## close the method definition
