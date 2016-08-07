@@ -29,18 +29,29 @@ def alias_manager(str)
 
 ## initialize new empty string to be the return value
 
+  new_alias = ""
+
 ## cycle through the characters of the string
 
+  fn_ln_swapped.each_char do |index|
+
 ## if the character is a space, append a space to the returned string
+
+  if index == " "
+    new_alias << " "
 
 ## if the character is a vowel, append the next vowel in aeiou or AEIOU to the returned string
 
 ## else, append the next consonant in {A-Z}\{AEIOU} or {a-z}\{aeiou} to the returned string
 
 ## close the if statement
+  end
 
 ## close the do loop
+  end
 
 ## return the result string
+return new_alias
 
-end ## close the method definition
+## close the method definition
+end
