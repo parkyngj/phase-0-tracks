@@ -6,7 +6,7 @@
 # Data Structure Level 0 (Outermost): Hash called pokemon_crystal_elite4
 pokemon_crystal_elite4 = {
 
-# Key values of pokemon_crystal_elite4 are to be elite1, elite2, elite3, elite4, champ (in that order)
+# Key values of pokemon_crystal_elite4 are to be elite1, elite2, elite3, elite4 (in that order)
 
 # Data Structure Level 1: values of keys of pokemon_crystal_elite4 will be hashes
   
@@ -34,33 +34,138 @@ pokemon_crystal_elite4 = {
     # key3 - Pokemon
     # value3 - an array
 
+        # Data Structure Level 2: value of key3 (Pokemon) will be an array
+
     pokemon:
       [
 
-      # Data Structure Level 2: value of key3 (Pokemon) will be an array
-
       # Data Structure Level 3: each array index will be a hash 
+
+        {
 
         # Desired keys and values to store in each hash in Level 3
           #key0 - name
           #value0 - a string
 
+          name:
+            "Xatu",
+
           #key1 - level
           #value1 - an integer
+
+          level:
+            40,
 
           #key2 - type(s)
           #value2 - a string
 
+          type:
+            "psychic/flying",
+
           #key3 - moveset
           #value3 - an array
+
+          moveset:
+            [
 
             # Data Structure Level 4: value of key3 (moveset) will be an array
               # each array index will be a string
 
+            ], ## indicates end of array for moveset key value
+
           #key4 - weak to lightning?
           # value4 - a boolean
 
-        ], ## indicates end of array for pokemon key value
+          weak_to_lightning:
+            true
+
+        }, ## indicates end of hash for index0 of pokemon array
+
+        {
+
+          name:
+            "Jynx",
+
+          level:
+            41,
+
+          type:
+            "ice/psychic",
+
+          moveset:
+            [
+
+            ], ## indicates end of array for moveset key value
+
+          weak_to_lightning:
+            false
+
+        }, ## indicates end of hash for index1 of pokemon array
+
+        {
+
+          name:
+            "Exeggutor",
+
+          level:
+            41,
+
+          type:
+            "grass/psychic",
+
+          moveset:
+            [
+
+            ], ## indicates end of array for moveset key value
+
+          weak_to_lightning:
+            false
+
+        }, ## indicates end of hash for index2 of pokemon array
+
+        {
+
+          name:
+            "Slowbro",
+
+          level:
+            41,
+
+          type:
+            "water/psychic",
+
+          moveset:
+            [
+
+            ], ## indicates end of array for moveset key value
+
+          weak_to_lightning:
+            true
+
+        }, ## indicates end of hash for index3 of pokemon array
+
+        {
+
+          name:
+            "Xatu",
+
+          level:
+            42,
+
+          type:
+            "psychic/flying",
+
+          moveset:
+            [
+
+            ], ## indicates end of array for moveset key value
+
+          weak_to_lightning:
+            true
+
+        }, ## indicates end of hash for index4 of pokemon array
+
+      ], ## indicates end of array for pokemon key value
 
     # key4 - reward
     # value4 - an integer
@@ -131,26 +236,5 @@ pokemon_crystal_elite4 = {
         4700
 
   }, ## indicates end of hash for elite4 key value
-
-  champ: {
-
-      name:
-        "Lance",
-
-      specialty_type:
-        "dragon",
-
-      numb_of_pokemon:
-        6,
-
-      pokemon:
-        [
-
-        ], ## indicates end of array for pokemon key value
-
-      reward:
-        5000
-
-  } ## indicates end of hash for champ key value
 
 } ## indicates end of hash for pokemon_crystal_elite4
