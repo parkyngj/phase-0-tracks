@@ -655,3 +655,43 @@ pokemon_crystal_elite4 = {
   }, ## indicates end of hash for elite4 key value
 
 } ## indicates end of hash for pokemon_crystal_elite4
+
+
+###################################################################################################################
+
+# A demonstration of accessing deeply nested data from the structure.
+
+# Example 1: Access just the information for elite4 #2
+
+pokemon_crystal_elite4[:elite2]
+
+# Example 2: Find out the name of elite4 #4
+
+pokemon_crystal_elite4[:elite4][:name]
+
+# Example 3: Upcase the specialty_type of elite4 #3 in the hash
+
+pokemon_crystal_elite4[:elite3][:specialty_type].upcase!
+
+# Example 4: check if the # of pokemon key matches with the array length in the pokemon key value for elite4 #1
+
+pokemon_crystal_elite4[:elite1][:numb_of_pokemon] == pokemon_crystal_elite4[:elite1][:pokemon].length
+
+# Example 5: Access the keys of the hash that represents elite4 #2’s second pokemon
+
+pokemon_crystal_elite4[:elite2][:pokemon][2].keys
+
+# Example 6: access just the second key of the hash that represent elite4 #2’s second pokemon
+
+pokemon_crystal_elite4[:elite2][:pokemon][2].keys[2]
+
+# Example 7: list all of the names of elite4 #3’s pokemon
+
+pokemon_crystal_elite4[:elite3][:pokemon].each do |index|
+  puts index.values[0]
+end
+
+# Example 8: change the name of Hitmonchan’s first move from “Thunderpunch” to “Thunder Punch”
+
+pokemon_crystal_elite4[:elite3][:pokemon][2].values[3][0] = “Thunder Punch”
+
