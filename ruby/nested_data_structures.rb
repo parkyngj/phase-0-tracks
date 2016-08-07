@@ -4,8 +4,11 @@
 # This means that the user would be interested in which Pokemon are weak to electric type attacks or not (hence calling for a true/false value)
 
 # Data Structure Level 0 (Outermost): Hash called pokemon_crystal_elite4
+pokemon_crystal_elite4 = {
 
 # Key values of pokemon_crystal_elite4 are to be elite1, elite2, elite3, elite4, champ (in that order)
+
+  elite1: {
 
 # Data Structure Level 1: values of keys of pokemon_crystal_elite4 will be hashes
 
@@ -47,3 +50,23 @@
 
 # Data Structure Level 4: value of key3 (moveset) will be an array
   # each array index will be a string
+
+  } ## indicates end of hash for elite1
+
+  elite2: {
+
+  } ## indicates end of hash for elite2
+
+  elite3: {
+
+  } ## indicates end of hash for elite3
+
+  elite4: {
+
+  } ## indicates end of hash for elite4
+
+  champ: {
+
+  } ## indicates end of hash for champ
+
+} ## indicates end of hash for pokemon_crystal_elite4
