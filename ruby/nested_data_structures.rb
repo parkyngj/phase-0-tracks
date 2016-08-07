@@ -71,6 +71,11 @@ pokemon_crystal_elite4 = {
             # Data Structure Level 4: value of key3 (moveset) will be an array
               # each array index will be a string
 
+              "Quick Attack",
+              "Future Sight",
+              "Confuse Ray",
+              "Psychic"
+
             ], ## indicates end of array for moveset key value
 
           #key4 - weak to lightning?
@@ -95,6 +100,11 @@ pokemon_crystal_elite4 = {
           moveset:
             [
 
+              "Double Slap",
+              "Lovely Kiss",
+              "Ice Punch",
+              "Psychic"
+
             ], ## indicates end of array for moveset key value
 
           weak_to_lightning:
@@ -115,6 +125,11 @@ pokemon_crystal_elite4 = {
 
           moveset:
             [
+
+              "Reflect",
+              "Leech Seed",
+              "Egg Bomb",
+              "Psychic"
 
             ], ## indicates end of array for moveset key value
 
@@ -137,6 +152,11 @@ pokemon_crystal_elite4 = {
           moveset:
             [
 
+              "Curse",
+              "Amnesia",
+              "Body Slam",
+              "Psychic"
+
             ], ## indicates end of array for moveset key value
 
           weak_to_lightning:
@@ -157,6 +177,11 @@ pokemon_crystal_elite4 = {
 
           moveset:
             [
+
+              "Quick Attack",
+              "Future Sight",
+              "Confuse Ray",
+              "Psychic"
 
             ], ## indicates end of array for moveset key value
 
@@ -203,6 +228,11 @@ pokemon_crystal_elite4 = {
            moveset:
              [
 
+              "Double Team",
+              "Spider Web",
+              "Baton Pass",
+              "Giga Drain"
+
              ], ## indicates end of array for moveset key value
 
            weak_to_lightning:
@@ -223,6 +253,11 @@ pokemon_crystal_elite4 = {
 
            moveset:
              [
+
+              "Supersonic",
+              "Gust",
+              "Psychic",
+              "Toxic"
 
              ], ## indicates end of array for moveset key value
 
@@ -245,6 +280,11 @@ pokemon_crystal_elite4 = {
            moveset:
              [
 
+              "Protect",
+              "Swift",
+              "Explosion",
+              "Spikes"
+
              ], ## indicates end of array for moveset key value
 
            weak_to_lightning:
@@ -266,6 +306,11 @@ pokemon_crystal_elite4 = {
            moveset:
              [
 
+              "Minimize",
+              "Acid Armor",
+              "Sludge Bomb",
+              "Toxic"
+
              ], ## indicates end of array for moveset key value
 
            weak_to_lightning:
@@ -286,6 +331,11 @@ pokemon_crystal_elite4 = {
 
            moveset:
              [
+
+              "Double Team",
+              "Quick Attack",
+              "Wing Attack",
+              "Toxic"
 
              ], ## indicates end of array for moveset key value
 
@@ -329,6 +379,11 @@ pokemon_crystal_elite4 = {
            moveset:
              [
 
+              "Pursuit",
+              "Quick Attack",
+              "Dig",
+              "Detect"
+
              ], ## indicates end of array for moveset key value
 
            weak_to_lightning:
@@ -349,6 +404,11 @@ pokemon_crystal_elite4 = {
 
            moveset:
              [
+
+              "Swagger",
+              "Double Kick",
+              "Hi Jump Kick",
+              "Foresight"
 
              ], ## indicates end of array for moveset key value
 
@@ -371,6 +431,11 @@ pokemon_crystal_elite4 = {
            moveset:
              [
 
+              "Thunderpunch",
+              "Fire Punch",
+              "Ice Punch",
+              "Mach Punch"
+
              ], ## indicates end of array for moveset key value
 
            weak_to_lightning:
@@ -392,6 +457,11 @@ pokemon_crystal_elite4 = {
            moveset:
              [
 
+              "Bind",
+              "Earthquake",
+              "Sandstorm",
+              "Rock Slide"
+
              ], ## indicates end of array for moveset key value
 
            weak_to_lightning:
@@ -412,6 +482,11 @@ pokemon_crystal_elite4 = {
 
            moveset:
              [
+
+              "Rock Slide",
+              "Foresight",
+              "Vital Throw",
+              "Cross Chop"
 
              ], ## indicates end of array for moveset key value
 
@@ -456,6 +531,11 @@ pokemon_crystal_elite4 = {
            moveset:
              [
 
+              "Sand-Attack",
+              "Confuse Ray",
+              "Faint Attack",
+              "Mean Look"
+
              ], ## indicates end of array for moveset key value
 
            weak_to_lightning:
@@ -476,6 +556,11 @@ pokemon_crystal_elite4 = {
 
            moveset:
              [
+
+              "Stun Spore",
+              "Acid",
+              "Moonlight",
+              "Petal Dance"
 
              ], ## indicates end of array for moveset key value
 
@@ -498,6 +583,11 @@ pokemon_crystal_elite4 = {
            moveset:
              [
 
+              "Lick",
+              "Spite",
+              "Curse",
+              "Destiny Bond"
+
              ], ## indicates end of array for moveset key value
 
            weak_to_lightning:
@@ -519,6 +609,11 @@ pokemon_crystal_elite4 = {
            moveset:
              [
 
+              "Quick Attack",
+              "Whirlwind",
+              "Pursuit",
+              "Faint Attack"
+
              ], ## indicates end of array for moveset key value
 
            weak_to_lightning:
@@ -539,6 +634,11 @@ pokemon_crystal_elite4 = {
 
            moveset:
              [
+
+              "Roar",
+              "Pursuit",
+              "Flamethrower",
+              "Crunch"
 
              ], ## indicates end of array for moveset key value
 
