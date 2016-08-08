@@ -41,6 +41,7 @@
 ## (Already knew this one!)
 
 "The mystery of the missing first letter"[1..-1]
+"The mystery of the missing first letter".slice(1,"The mystery of the missing first letter".length)
 # => "he mystery of the missing first letter"
 ## Oh boy. So, I did a CTRL+F for "remove" and "first" and didn't find anything on the Ruby documentation for Strings.
 ## So I Googled "ruby built-in method for removing first character of string" and basically found that there is no built-in method as simple as .chop.
