@@ -102,3 +102,27 @@ end
 
 # Below returns the new value of adventure_time_ages, which is {:marceline=>1000, :lsp=>18, :bmo=>"over 1000"}
 p adventure_time_ages
+
+# Another way for Q4 for hsh class, not using .map:
+# Use .drop_while, similar to ary
+
+# initialize adventure_time_ages again since it was modified above by .map call
+
+adventure_time_ages = {finn: 16, jake: 34, ice_king: "over 1000", bubblegum: 827, rainicorn: "unknown", marceline: 1000, lsp: 18, bmo: "over 1000"}
+
+# .drop_while on a hash returns an array, we store it as a variable
+adventure_time_ages_upto_marceline_ary = adventure_time_ages.drop_while do |char, age|
+  age != 1000
+end
+
+# returns [[:marceline, 1000], [:lsp, 18], [:bmo, "over 1000"]]
+
+# initialize an empty has to restore the data in the above array into a hash
+adventure_time_ages_upto_marceline = {}
+
+# iterate through the array. each item in an array is an array itself, with 2 entries
+# the first entry is the character name - put that as the key
+# the second entry is the character age - put that as the corresponding value
+adventure_time_ages_upto_marceline_ary.each do |char|
+  adventure_time_ages_upto_marceline[char[0]] = char[1]
+end
