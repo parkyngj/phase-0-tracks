@@ -14,6 +14,48 @@
 # Wag Tail
 # Fetch
 
-# 1. In IRB, declare your Puppy class
+# 6-1 Q1. In IRB, declare your Puppy class
 class Puppy
+
+  # Define a method for the puppy class to fetch an object
+  def fetch(toy)
+    puts "I brought back the #{toy}!"
+    toy
+  end
+
+  # 6-2 02. Add a speak method that takes an integer, and then prints "Woof!" that many times
+  def speak(int)
+    int.times do
+      puts "Woof!"
+    end
+  end
+
+  # 6-2 03. Add a roll_over method that just prints "*rolls over*".
+  def roll_over
+    puts "*rolls over*"
+  end
+
+  # 6-2 04. Add a dog_years method that takes an integer (of human years) and converts that number to dog years, returning a new integer.
+  def dog_years(int)
+    int / 9
+  end
+
+  # 6-2 05. Add one more trick -- whichever one you like.
+  # Add a shake method that doesn't take any inputs, and makes the dog hold out his paw to be shaken.
+
+  def shake
+    puts "*holds out paw*"
+  end
+
 end
+
+## DRIVER CODE
+
+# 6-2 Q1. Initialize an instance of Puppy, and verify that your instance can now fetch a ball.
+# 6-2 06. Demonstrate that all of the methods in Puppy class work as expected.
+
+popper = Puppy.new
+popper.fetch("ball")
+popper.roll_over
+popper.dog_years(23)
+popper.shake
