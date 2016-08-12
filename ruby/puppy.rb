@@ -13,3 +13,7 @@
 # Bark At
 # Wag Tail
 # Fetch
+
+# 1. In IRB, declare your Puppy class
+class Puppy
+end
