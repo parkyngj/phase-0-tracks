@@ -5,9 +5,11 @@
 # R0. Define a Santa class. Your class should have three instance methods (speak, eat_milk_and_cookies, and an initialize)
 
 class Santa
+    # R3. Refactor your code with attr_reader and attr_accessor. Verify that your driver code still works.
+    attr_reader :ethnicity
+    attr_accessor :gender, :age, :reindeer_ranking
 
   def initialize(gender, ethnicity)
-
     # R1. Update your Santa class with the following attributes.
     # gender, which will be a string passed in on initialization
     @gender = gender
@@ -31,14 +33,14 @@ class Santa
   # R2. "getter methods"
 
   # The method age should simply return @age.
-  def age
-    @age
-  end
+  # def age
+  #   @age
+  # end
 
   # The method ethnicity should return @ethnicity.
-  def ethnicity
-    @ethnicity
-  end
+  # def ethnicity
+  #   @ethnicity
+  # end
 
   # R3. "setter methods" - Add three attribute-changing methods to your Santa class.
 
@@ -68,22 +70,36 @@ end # end Santa class definition
 
 # R1. Add some diverse initializations to your file as driver code.
 
-santas = []
-example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
-example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
-example_genders.length.times do |i|
-  santas << Santa.new(example_genders[i], example_ethnicities[i])
-end
+# santas = []
+# example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
+# example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
+# example_genders.length.times do |i|
+#   santas << Santa.new(example_genders[i], example_ethnicities[i])
+# end
 
 # R2. Checking if getter and setter methods work.
 
+# st = Santa.new("f","Korean")
+# p st.age
+# p st.celebrate_birthday
+# p st.age
+# p st.ethnicity
+# p st.instance_variable_get(:@reindeer_ranking)
+# p st.get_mad_at("Dancer")
+# p st.instance_variable_get(:@reindeer_ranking)
+# p st.instance_variable_get(:@gender)
+# p st.change_gender("agender")
+
+# R3. Checking if attr_reader and attr_accessor replacing getter and setter methods works.
+
 st = Santa.new("f","Korean")
 p st.age
-p st.celebrate_birthday
+p st.age = 23
 p st.age
+p st.gender
+p st.gender = "agender"
+p st.gender
 p st.ethnicity
-p st.instance_variable_get(:@reindeer_ranking)
-p st.get_mad_at("Dancer")
-p st.instance_variable_get(:@reindeer_ranking)
-p st.instance_variable_get(:@gender)
-p st.change_gender("agender")
+p st.reindeer_ranking
+p st.reindeer_ranking.insert(-1,st.reindeer_ranking.delete_at(2))
+p st.reindeer_ranking
