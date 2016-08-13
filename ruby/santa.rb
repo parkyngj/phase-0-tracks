@@ -6,7 +6,17 @@
 
 class Santa
 
-  def initialize
+  def initialize(gender, ethnicity)
+
+    # R1. Update your Santa class with the following attributes.
+    # gender, which will be a string passed in on initialization
+    @gender = gender
+    # ethnicity, which will be a string passed in on initialization
+    @ethnicity = ethnicity
+    # reindeer_ranking, an array of reindeer from most preferred to least preferred. This is not passed in on initialization, it simply gets a default value.
+    @reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
+    # age, which is not passed in on initialization and defaults to 0.
+    @age = 0
     puts "Initializing Santa instance..."
   end
 
@@ -22,6 +32,15 @@ end # end Santa class definition
 
 # R0. Add a bit of code below your class declaration to check that you're able to initialize a Santa instance and call its methods.
 
-st = Santa.new
-st.speak
-st.eat_milk_and_cookies("sugar")
+# st = Santa.new
+# st.speak
+# st.eat_milk_and_cookies("sugar")
+
+# R1. Add some diverse initializations to your file as driver code.
+
+santas = []
+example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
+example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
+example_genders.length.times do |i|
+  santas << Santa.new(example_genders[i], example_ethnicities[i])
+end
