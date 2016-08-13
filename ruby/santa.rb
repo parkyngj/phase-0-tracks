@@ -92,14 +92,36 @@ end # end Santa class definition
 
 # R3. Checking if attr_reader and attr_accessor replacing getter and setter methods works.
 
-st = Santa.new("f","Korean")
-p st.age
-p st.age = 23
-p st.age
-p st.gender
-p st.gender = "agender"
-p st.gender
-p st.ethnicity
-p st.reindeer_ranking
-p st.reindeer_ranking.insert(-1,st.reindeer_ranking.delete_at(2))
-p st.reindeer_ranking
+# st = Santa.new("f","Korean")
+# p st.age
+# p st.age = 23
+# p st.age
+# p st.gender
+# p st.gender = "agender"
+# p st.gender
+# p st.ethnicity
+# p st.reindeer_ranking
+# p st.reindeer_ranking.insert(-1,st.reindeer_ranking.delete_at(2))
+# p st.reindeer_ranking
+
+# R4. Write a program that creates lots of Santas.
+# Use our array of example genders and an array of example ethnicities (and feel free to add to it if you like -- each array could have a lot more options in it!) to create your Santas with a randomly selected gender and a randomly selected ethnicity. (How do you randomly select an array item? The Array documentation should be able to help you out there!)
+# Set your new Santa's age to a random number between 0 and 140.
+
+def santa_maker(num)
+  num.times do |idx|
+    example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
+  example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
+    random_gender = example_genders.sample
+    random_ethnicity = example_ethnicities.sample
+    new_santa = Santa.new(random_gender,random_ethnicity)
+    new_santa.age = rand(0..140)
+    puts "Santa #{idx}:\n
+          Gender: #{new_santa.gender}\n
+          Ethnicity: #{new_santa.ethnicity}\n
+          Age: #{new_santa.age}\n
+          Reindeer Ranking: #{new_santa.reindeer_ranking}\n"
+  end
+end
+
+santa_maker(10)
