@@ -56,6 +56,38 @@ class Puppy
 
 end
 
+# 6-2 R2 Design and implement your own class. It should have an initialize method and at least two other instance methods.
+class Rabbit
+  def initialize(name = "", owner = "", color ="")
+    @name = name
+    @owner = owner
+    @color = color
+  end
+
+  def om_nom_nom(food)
+    puts("#{@name} is om nom nomming on a #{food}")
+  end
+
+  def print_info
+    puts("Rabbit name: #{@name}")
+    puts("Rabbit owner: #{@owner}")
+    puts("Rabbit color: #{@color}")
+  end
+end
+
+
+rabbit_arr = []
+
+# 6-2 R2 #2. Modify your loop so that it stores all of the instances in a data structure.
+50.times{|idx|
+  rabbit_arr[idx] = Rabbit.new(name = (idx + 1).to_s)
+  rabbit_arr[idx].print_info
+}
+
+# 6-2 R2 R3. Iterate over that data structure using .each and call the instance methods you wrote on each instance.
+rabbit_arr.each {|bunny|
+  bunny.om_nom_nom("hay")
+
 ## DRIVER CODE
 
 # 6-2 R0 Q1. Initialize an instance of Puppy, and verify that your instance can now fetch a ball.
