@@ -102,3 +102,65 @@ whelp.mount("Cas")
 whelp.mount("Jess")
 whelp.mount("Resdan")
 p whelp.passengers
+
+######### R2. Use Your Class in a Program
+# Modify your program so that it has a user interface.
+# Your user should be allowed to create as many instances of your class as they like.
+# Prompt the user for each attribute, and don't forget to convert their input to the appropriate data type. Store these class instances in an array.
+# When the user indicates that they are finished creating instances, loop through the array and print out the attributes of each instance as a confirmation of what was created.
+
+generate = nil
+
+until generate == false
+
+puts "Hello, and welcome to the mythical dragon generator! Please enter your new dragon's name."
+dname = gets.chomp
+
+puts "Enter your new dragon's age in years."
+dage = gets.chomp.to_i
+
+puts "Enter your new dragon's color."
+dcolor = gets.chomp
+
+user_dragon = Dragon.new(dname,dage,dcolor)
+
+puts "Congratulations, #{user_dragon.name} has been created! Would you like your dragon to come pre-trained? (y/n)"
+dtrain = gets.chomp
+
+    if dtrain == "y"
+      user_dragon.train
+    elsif dtrain == "n"
+      puts "Okay, then."
+    else puts "Please enter 'y' or 'n'."
+      dtrain = gets.chomp
+    end
+
+if user_dragon.friendly
+  puts "Would you like to put any passengers on your new dragon #{user_dragon.name}? (y/n)"
+  want_pass = gets.chomp
+    if want_pass == "n"
+      puts "Okay, then."
+    elsif want_pass == "y"
+      puts "Type each passenger's name, separated by the enter key. When you are done, type done."
+      dpass = gets.chomp
+        until dpass == "done"
+          user_dragon.mount(dpass)
+          dpass = gets.chomp
+        end
+    else puts "Please enter 'y' or 'n'."
+      want_pass = gets.chomp
+    end
+end
+
+puts "Would you like to create another dragon? (y/n)"
+more_drag = gets.chomp
+
+if more_drag == "y"
+  generate = true
+elsif more_rag == "n"
+  generate = false
+else puts "Please enter 'y' or 'n'."
+  more_drag = gets.chomp
+end
+
+end
