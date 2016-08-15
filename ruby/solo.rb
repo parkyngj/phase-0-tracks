@@ -62,6 +62,9 @@ class Dragon
 
 end #ends Dragon class definition
 
+
+######### DRIVER CODE
+
 # Instantiate a new Dragon named Nefarian, age 1, color red. By default, Nefarian is not friendly and has no passengers.
 whelp = Dragon.new("Nefarian",1,"red")
 # We can read the whelp's color, but we can't write it.
