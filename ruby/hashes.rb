@@ -60,7 +60,7 @@ key_to_update = gets.chomp
 if key_to_update != "none"
   puts "Enter the new value of the key you chose to update."
 ## We must convert the string provided to a symbol, since the user will enter the key name that they want to alter as a string.
-  key_to_update = gets.chomp.to_sym
+  key_to_update = key_to_update.to_sym
   updated_value = gets.chomp
 ## Depending on the key that the user wants to update, we might need to convert data types.
 ## If the key that the user wants to update is age or # of children, then we need to convert updated_value to an integer
