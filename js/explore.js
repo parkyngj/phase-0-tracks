@@ -19,3 +19,27 @@ function reverse(str) {
   // finish off by having the function return the newly updated initialized variable
   return revstr
 }
+
+// -------------------------------------------------------------
+
+// DRIVER CODE
+
+// returns "olleh"
+console.log(reverse("hello"));
+// returns "h"
+console.log(("h"));
+// returns ""
+console.log(reverse(""));
+// returns "ereht olleh yhw"
+console.log(reverse("why hello there"));
+
+// R4. #4 Add driver code that calls the function in order to reverse a string of your choice and store the result of the function in a variable.
+
+var my_string = reverse("whatevr");
+
+// R4. #5 Add driver code that prints the variable if some condition is true. The condition can be a silly one, like 1 == 1.
+
+if (my_string[1] == "e") {
+  console.log(my_string)
+}
+else {console.log("whatevs dawg")};
