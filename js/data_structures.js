@@ -29,3 +29,34 @@ for(var i = 0; i < ary_length; i++){
 };
 
 console.log(ponies);
+
+// R2. #2
+// Write a constructor function for a car. Give it a few different properties of various data types, including at least one function.
+// Demonstrate that your function works by creating a few cars with it.
+
+function Car(brand, color, year){
+  this.brand = brand;
+  this.color = color;
+  this.year = year;
+
+  this.battery_running = false;
+
+  this.start_engine = function(){
+    console.log("VRRRROOOOOOMMM!!!!")
+  };
+
+  this.transport = function(person,place){
+    if (this.battery_running) {
+    console.log(person + " was driven to " + place + ".")}
+    else {
+    console.log("Your car is busted, bro. Bummer. Try replacing the battery.")
+    }
+  }
+}; // ends Car constructor function
+
+var our_car = new Car("Honda", "silver", 1991);
+console.log(our_car);
+our_car.start_engine()
+our_car.transport("Justin","Ohio")
+our_car.battery_running = true
+our_car.transport("Justin","Ohio")
