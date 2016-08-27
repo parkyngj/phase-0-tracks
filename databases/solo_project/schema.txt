@@ -1,0 +1,39 @@
+Young Ju (Sally) Park
+Module 8.3: Solo Challenge: Build a Database (SQLite3)
+
+=================================================================================================
+R0. Design a Schema
+#2. Come up with an idea for two database tables that would have a one-to-many relationship.
+In addition to the required primary and foreign keys, your tables should use three data types (you can use the ones we've learned so far, or try something different if you'd like).
+#3. Think about naming conventions and general readability, and make sure that your database, table, and column names make sense.
+#4. Save a screenshot or other photo of your schema drawing in the solo_project directory.
+=================================================================================================
+
+SONGS			
+id (integer primary key)	
+name (varchar 255)		ARTISTS
+artist_id (int) ----------->	id (integer primary key)
+length (time)			name (varchar 255)
+					disbanded (boolean)
+
+=================================================================================================
+
+SONGS
+id name								artist_id		length
+-- -----------------------------------------			--------------	------
+1  Instant Crush						1			05:36
+2  Something About Us				1			03:51
+3  Clint Eastwood						2			08:23
+4  Empire Ants						2			04:44
+5  Rhinestone Eyes					2			03:20
+6  Please, Please, Please				3			03:58
+7  There is a Light That Never Goes Out	3			04:20
+
+=================================================================================================
+
+ARTISTS
+id name			disbanded
+-- ------------------- 	---------
+1  Daft Punk		false
+2  Gorillaz		false
+3  The Smiths	true
