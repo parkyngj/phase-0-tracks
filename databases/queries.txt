@@ -1,0 +1,77 @@
+Young Ju (Sally) Park
+Module 8.3: Solo Challenge: Build a Database (SQLite3)
+
+=================================================================================================
+R.2 Execute SQL Queries
+=================================================================================================
+
+1. DISPLAY THE INFORMATION IN ONE TABLE (EITHER TABLE IS FINE.)
+
+sqlite> SELECT * FROM songs;
+1|Clint Eastwood|2|00:08:23
+2|Empire Ants|2|00:04:44
+3|Instant Crush|1|00:05:36
+4|Please, Please, Please|3|00:03:58
+5|Rhinestone Eyes|2|00:03:20
+6|Something About Us|1|00:03:51
+7|There Is A Light That Never Goes Out|3|00:04:20
+sqlite> SELECT * FROM artists;
+1|Daft Punk|false
+2|Gorillaz|false
+3|The Smiths|true
+
+2. UPDATE AN ITEM THAT MEETS SOME CONDITION (YOU CAN CHOOSE A CONDITION THAT MAKES SENSE.)
+
+sqlite> UPDATE artists SET disbanded = "false" WHERE name="The Smiths";
+sqlite> SELECT * FROM artists;
+1|Daft Punk|false
+2|Gorillaz|false
+3|The Smiths|false
+
+3. DISPLAY THE INFORMATION IN BOTH TABLES USING ONE QUERY.
+
+sqlite> SELECT * FROM artists, songs;
+1|Daft Punk|false|1|Clint Eastwood|2|00:08:23
+1|Daft Punk|false|2|Empire Ants|2|00:04:44
+1|Daft Punk|false|3|Instant Crush|1|00:05:36
+1|Daft Punk|false|4|Please, Please, Please|3|00:03:58
+1|Daft Punk|false|5|Rhinestone Eyes|2|00:03:20
+1|Daft Punk|false|6|Something About Us|1|00:03:51
+1|Daft Punk|false|7|There Is A Light That Never Goes Out|3|00:04:20
+2|Gorillaz|false|1|Clint Eastwood|2|00:08:23
+2|Gorillaz|false|2|Empire Ants|2|00:04:44
+2|Gorillaz|false|3|Instant Crush|1|00:05:36
+2|Gorillaz|false|4|Please, Please, Please|3|00:03:58
+2|Gorillaz|false|5|Rhinestone Eyes|2|00:03:20
+2|Gorillaz|false|6|Something About Us|1|00:03:51
+2|Gorillaz|false|7|There Is A Light That Never Goes Out|3|00:04:20
+3|The Smiths|false|1|Clint Eastwood|2|00:08:23
+3|The Smiths|false|2|Empire Ants|2|00:04:44
+3|The Smiths|false|3|Instant Crush|1|00:05:36
+3|The Smiths|false|4|Please, Please, Please|3|00:03:58
+3|The Smiths|false|5|Rhinestone Eyes|2|00:03:20
+3|The Smiths|false|6|Something About Us|1|00:03:51
+3|The Smiths|false|7|There Is A Light That Never Goes Out|3|00:04:20
+
+4. DISPLAY A NARROWER SELECTION OF COLUMNS (FEWER COLUMNS THAN ALL OF THEM, IN OTHER WORDS) FROM BOTH TABLES USING ONE QUERY.
+
+sqlite> SELECT songs.name, artists.name FROM songs JOIN artists WHERE songs.artist_id = artists.id;
+Clint Eastwood|Gorillaz
+Empire Ants|Gorillaz
+Instant Crush|Daft Punk
+Please, Please, Please|The Smiths
+Rhinestone Eyes|Gorillaz
+Something About Us|Daft Punk
+There Is A Light That Never Goes Out|The Smiths
+
+5. DELETE AN ITEM THAT MEETS SOME CONDITION (YOU CAN CHOOSE A CONDITION THAT MAKES SENSE).
+
+sqlite> DELETE FROM songs WHERE name = "Rhinestone Eyes";
+sqlite> SELECT * FROM songs;
+id|name|artist_id|length
+1|Clint Eastwood|2|00:08:23
+2|Empire Ants|2|00:04:44
+3|Instant Crush|1|00:05:36
+4|Please, Please, Please|3|00:03:58
+6|Something About Us|1|00:03:51
+7|There Is A Light That Never Goes Out|3|00:04:20
