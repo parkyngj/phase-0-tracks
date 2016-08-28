@@ -21,12 +21,12 @@ length (time)			name (varchar 255)
 SONGS
 id name								artist_id		length
 -- -----------------------------------------			--------------	------
-1  Instant Crush						1			05:36
-2  Something About Us				1			03:51
-3  Clint Eastwood						2			08:23
-4  Empire Ants						2			04:44
+1  Clint Eastwood						2			08:23
+2  Empire Ants						2			04:44
+3  Instant Crush						1			05:36
+4  Please, Please, Please				3			03:58
 5  Rhinestone Eyes					2			03:20
-6  Please, Please, Please				3			03:58
+6  Something About Us				1			03:51
 7  There is a Light That Never Goes Out	3			04:20
 
 =================================================================================================
