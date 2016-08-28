@@ -75,3 +75,48 @@ id|name|artist_id|length
 4|Please, Please, Please|3|00:03:58
 6|Something About Us|1|00:03:51
 7|There Is A Light That Never Goes Out|3|00:04:20
+
+
+sqlite> SELECT songs.name, artists.name, length FROM songs CROSS JOIN artists;
+name|name|length
+Clint Eastwood|Daft Punk|00:08:23
+Clint Eastwood|Gorillaz|00:08:23
+Clint Eastwood|The Smiths|00:08:23
+Empire Ants|Daft Punk|00:04:44
+Empire Ants|Gorillaz|00:04:44
+Empire Ants|The Smiths|00:04:44
+Instant Crush|Daft Punk|00:05:36
+Instant Crush|Gorillaz|00:05:36
+Instant Crush|The Smiths|00:05:36
+Please, Please, Please|Daft Punk|00:03:58
+Please, Please, Please|Gorillaz|00:03:58
+Please, Please, Please|The Smiths|00:03:58
+Something About Us|Daft Punk|00:03:51
+Something About Us|Gorillaz|00:03:51
+Something About Us|The Smiths|00:03:51
+There Is A Light That Never Goes Out|Daft Punk|00:04:20
+There Is A Light That Never Goes Out|Gorillaz|00:04:20
+There Is A Light That Never Goes Out|The Smiths|00:04:20
+
+=================================================================================================
+R.2 Research On Your Own
+2. Try a few different joins in your database, and record the commands and the output in queries.txt.
+=================================================================================================
+
+sqlite> SELECT * FROM songs INNER JOIN artists ON songs.artist_id = artists.id;
+id|name|artist_id|length|id|name|disbanded
+1|Clint Eastwood|2|00:08:23|2|Gorillaz|false
+2|Empire Ants|2|00:04:44|2|Gorillaz|false
+3|Instant Crush|1|00:05:36|1|Daft Punk|false
+4|Please, Please, Please|3|00:03:58|3|The Smiths|false
+6|Something About Us|1|00:03:51|1|Daft Punk|false
+7|There Is A Light That Never Goes Out|3|00:04:20|3|The Smiths|false
+
+sqlite> SELECT songs.name, artists.name, length FROM songs JOIN artists ON songs.artist_id = artists.id;
+name|name|length
+Clint Eastwood|Gorillaz|00:08:23
+Empire Ants|Gorillaz|00:04:44
+Instant Crush|Daft Punk|00:05:36
+Please, Please, Please|The Smiths|00:03:58
+Something About Us|Daft Punk|00:03:51
+There Is A Light That Never Goes Out|The Smiths|00:04:20
