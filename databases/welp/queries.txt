@@ -1,0 +1,14 @@
+2.
+sqlite> select * from users join reviews on users.id = reviews.user_id join businesses on reviews.business_id = businesses.id;
+1|Bradford|Pitt|1|5|Amazing, I looooooove this place! More sushi please!|2|1|2|Sushi World
+3|Steven|Wonder|2|1|No alcohol.....what kind of nightclub is BYOB?????|3|3|3|Beagle Night Club
+
+3.
+sqlite> select users.first_name, users.last_name, businesses.name, reviews.stars, reviews.comment from users join reviews on users.id = reviews.user_id join businesse
+Bradford|Pitt|Sushi World|5|Amazing, I looooooove this place! More sushi please!
+Steven|Wonder|Beagle Night Club|1|No alcohol.....what kind of nightclub is BYOB?????
+
+4.
+sqlite> select users.first_name, users.last_name, businesses.name, reviews.stars, reviews.comment from users join reviews on users.id = reviews.user_id join businesses on reviews.business_id = businesses.id where businesses.name="Sushi World";
+Bradford|Pitt|Sushi World|5|Amazing, I looooooove this place! More sushi please!
+sqlite>
