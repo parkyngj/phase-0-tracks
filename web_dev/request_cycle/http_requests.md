@@ -69,3 +69,15 @@ The main difference between the request methods GET and POST is that GET request
 (!) This means that we should NEVER use GET when sending passwords and other potentially sensitive information.
 
 ## 4. **Optional bonus question:** What is a cookie? How does it relate to HTTP requests?
+
+Cookies are small files stored on a user's computer. They hold data specific to a particular client and website, and can be accessed by the web server or the client computer. Cookies allow the server to deliver a page tailored to a particular user's preferences. Also, the page itself can contain a script aware of the cookie's data and so is able to carry information from one visit (or related site) to the next.
+
+In actually, cookies are small lookup tables containing pairs of key/value pairs. Once the cookie has been read by the server or client computer, data can then be retrieved and used to customize the webpage.
+
+It is not possible for a webpage to view cookies set by other sites (this would be a privacy/security problem).
+
+Cookies are usually created when a new webpage is loaded, for example after a 'submit' button is pressed, the data handling page would be responsible for storing the values in a cookie. (If the user has disabled cookies, then the write operation fails and the subsequent sites would either take default action or prompt the user to re-enter the information that would have been stored in the cookie.)
+
+Cookies are used because they are a convenient way to carry information from one session on a website to another, or between sessions on related websites, without having to burden a server machine with massive amounts of data storage. (For example the first time a user visits a site they may choose a username which is stored in the cookie, and then provide data such as password, name, address, preferred font size, page layout, etc. - this information would all be stored on the database using the username as a key. Subsequently when the site is revisited the server will read the cookie to find the username, and then retrieve all the user's information from the database without it having to be re-entered.)
+
+The time of expiry of a cookie can be set when the cookie is created. By default, a cookie is destroyed when the current browser window is closed, but it can be made to persist for an arbitrary length of time after the browser window is closed.
