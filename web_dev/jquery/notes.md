@@ -136,9 +136,9 @@ Common DOM events:
 
 An example: To assign a click event to all paragraphs on a page and then define what should happen when the event fires, we do:
 
-```$("p").click(function(){
-  // action goes here!!
-});```
+    $("p").click(function(){
+    // action goes here!!
+    });
 
 Click [here](http://www.w3schools.com/jquery/jquery_events.asp) for some more examples of 
 
@@ -148,7 +148,7 @@ The `on()` method attaches one or more event handlers for the selected elements.
 
 An example:
 
-```$("p").on({
+    $("p").on({
     mouseenter: function(){
         $(this).css("background-color", "lightgray");
     }, 
@@ -158,7 +158,7 @@ An example:
     click: function(){
         $(this).css("background-color", "yellow");
     } 
-});```
+    });```
 
 # Reference for Later
 
