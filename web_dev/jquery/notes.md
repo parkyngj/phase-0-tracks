@@ -64,9 +64,9 @@ The basic syntax is `$(selector).action()`.
 
 A good practice: put all jQuery methods inside of a document ready event:
 
-```$(document).ready(function(){
-  // jQuery methods go here..
-});```
+    $(document).ready(function(){
+    // jQuery methods go here..
+    });
 
 This is to prevent any jQuery code from running before the document is finished loading.
 
