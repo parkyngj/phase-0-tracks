@@ -41,3 +41,25 @@ list.appendChild(newBullet)
 
 console.log(list.children)
 // returns [li, li, li, li]
+
+
+function addPinkBorder(event) {
+  event.target.style.border = "3px solid pink";
+}
+
+function deleteBorder(event) {
+  event.target.style.border = "none";
+}
+
+var photos = document.getElementsByTagName('img');
+photo = photos[0]
+photo.addEventListener("mousemove", addPinkBorder);
+photo.addEventListener("mouseout", deleteBorder);
+
+function partyPandaGif(event) {
+  event.target.insertAdjacentHTML('afterend', '<p><img src="http://i.imgur.com/OxJ6X.gif"></p>')
+}
+
+var submitbuttons = document.getElementsByTagName('button')
+button = submitbuttons[0]
+button.addEventListener("click", partyPandaGif)
