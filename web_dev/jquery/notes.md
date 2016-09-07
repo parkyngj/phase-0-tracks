@@ -103,15 +103,15 @@ More examples:
 |-------------------------- |-------------------------------------------------------------------------- |
 | `$("*")`                  | Selects all elements                                                      |
 | `$(this)`                 | Selects the current HTML element                                          |
-| `$("p.intro")`            | Selects all <p> elements with class="intro"                               |
-| `$("p:first")`            | Selects the first <p> element                                             |
-| `$("ul li:first")`        | Selects the first <li> element of the first <ul>                          |
-| `$("ul li:first-child")`  | Selects the first <li> element of every <ul>                              |
-| `$("[href]")`             | Selects all elements with a href attribute                                |
-| `$("a[target='_blank'")`  | Selects all <a> elements with a target attribute value equal to '_blank'  |
-| `$(":button")`            | Selects all <button> elements and <input> elements of type="button"       |
-| `$("tr:even")`            | Selects all even <tr> elements                                            |
-| `$("tr:odd")`             | Selects all odd <tr> elements                                             |
+| `$("p.intro")`            | Selects all `<p>` elements with `class="intro"    `                           |
+| `$("p:first")`            | Selects the first `<p>` element                                             |
+| `$("ul li:first")`        | Selects the first `<li>` element of the first `<ul>`                          |
+| `$("ul li:first-child")`  | Selects the first `<li>` element of every `<ul>`                              |
+| `$("[href]")`             | Selects all elements with a `href` attribute                                |
+| `$("a[target='_blank'")`  | Selects all `<a>` elements with a target attribute value equal to `'_blank'`  |
+| `$(":button")`            | Selects all `<button>` elements and `<input>` elements of `type="button"`       |
+| `$("tr:even")`            | Selects all even `<tr>` elements                                            |
+| `$("tr:odd")`             | Selects all odd `<tr>` elements                                             |
 
 ## jQuery Event Methods
 
@@ -144,7 +144,7 @@ An example: To assign a click event to all paragraphs on a page and then define 
     // action goes here!!
     });
 
-Click [here](http://www.w3schools.com/jquery/jquery_events.asp) for some more examples of 
+Click [here](http://www.w3schools.com/jquery/jquery_events.asp) for some more examples of jQuery events
 
 #### Attach more than one event handler for selected element
 
