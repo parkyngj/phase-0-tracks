@@ -1,5 +1,7 @@
 Young Ju (Sally) Park
+
 Module 9.3: jQuery
+
 September 6th, 2016
 
 # R0: Make a Plan
@@ -25,6 +27,7 @@ If I'm feeling overwhelmed or tired, then I'll take a 5 minute break to get up a
 ## What is jQuery?
 
 jQuery is a lightweight, "write less, do more" JS library. The purpose of jQuery is to make it easier to use JS on your website.
+
 jQuery takes a lot of common tasks that require many lines of JS code to accomplish, and wraps them into methods that you can call with a single line of code.
 
 jQuery library contains the following features:
@@ -113,6 +116,7 @@ More examples:
 ## jQuery Event Methods
 
 All the different user's actions that a webpage can respond to are called events.
+
 An event represents the precise moment when something happens.
 
 [List of jQuery Event Methods](http://www.w3schools.com/jquery/jquery_ref_events.asp)
@@ -158,7 +162,7 @@ An example:
     click: function(){
         $(this).css("background-color", "yellow");
     } 
-    });```
+    });
 
 # Reference for Later
 
