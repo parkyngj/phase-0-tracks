@@ -18,7 +18,7 @@ Whenever coming across something drastically different or completely new from wh
 
 ## Are breaks important?
 
-* If I'm feeling overwhelmed or tired, then I'll take a 5 minute break to get up and walk around (rehydrate and whatnot).
+If I'm feeling overwhelmed or tired, then I'll take a 5 minute break to get up and walk around (rehydrate and whatnot).
 
 # R1: Study Up
 
@@ -162,4 +162,4 @@ An example:
 
 # Reference for Later
 
-(jQuery Hide/Show, etc.)[http://www.w3schools.com/jquery/jquery_hide_show.asp]
+[jQuery Hide/Show, etc.](http://www.w3schools.com/jquery/jquery_hide_show.asp)
