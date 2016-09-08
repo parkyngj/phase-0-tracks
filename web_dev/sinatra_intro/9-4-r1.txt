@@ -1,0 +1,28 @@
+RELEASE 1: Research On Your Own
+
+1. Is Sinatra the only web app library in Ruby? What are some others?
+
+- Rails
+- AWS Flow
+- Cuba
+- Padrino
+- Lotus
+
+credit: https://blog.engineyard.com/2015/life-beyond-rails-brief-look-alternate-web-frameworks-ruby
+https://blog.codeship.com/a-survey-of-non-rails-frameworks-in-ruby-cuba-sinatra-padrino-lotus/
+
+2. Are SQLite and sqlite3 gem your only options for using a database with Sinatra? What are some others?
+
+- ActiveRecord
+- Datamapper
+
+credit: http://stackoverflow.com/questions/777724/whats-the-best-way-to-talk-to-a-database-while-using-sinatra
+
+3. What is meant by the term web stack?
+
+A web stack is the collection of software required for web development. At a minimum, a web stack contains an operating system, a programming language, database software, and a web server.
+
+Example: LAMP (Linux, Apache, MySQL, PHP) as (OS, web server, relational database management system, obj-orientated scripting language)
+
+credit: http://whatis.techtarget.com/definition/Web-stack
+http://stackoverflow.com/questions/382665/what-is-meant-by-the-term-web-stack
